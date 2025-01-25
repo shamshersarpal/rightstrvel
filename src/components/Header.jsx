@@ -34,9 +34,9 @@ export default function Header() {
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
-              className="px-6 py-3.5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800    font-medium rounded-lg text-sm px-5 py-2.5 text-center   uppercase"
+              className="  text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800    font-medium rounded-lg text-sm px-5 py-2.5 text-center   uppercase"
             >
-              Contact
+              LOGIN
             </button>
             <button
               data-collapse-toggle="navbar-sticky"
