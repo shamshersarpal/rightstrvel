@@ -18,9 +18,9 @@ export default function HeroSection() {
                 <h1 className="text-4xl font-extrabold text-center text-white md:text-5xl lg:text-7xl">
   Discover Amazing <br /> Places With Us
 </h1>
-        <div className="searchBar mt-4">
-             <SearchBar/>
-             <div className="flex flex-warp gap-1 my-5 px-4">
+        <div className="searchBar mt-4 w-full">
+              
+             <div className="flex flex-warp gap-1 my-5 px-4 justify-center">
              <button type="button" className="px-3 py-2 text-xs font-medium text-center   rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-100 text-blue-900">Africa tours</button>
              <button type="button" className="px-3 py-2 text-xs font-medium text-center   rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-100 text-blue-900">Asia tours</button>
              <button type="button" className="px-3 py-2 text-xs font-medium text-center   rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-100 text-blue-900">Europe tours</button>
