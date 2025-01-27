@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  margin-top: 63px;
+  margin-top: 98px;
 }
 .hero{
   background-image: url("../images/hero.jpg");
@@ -35,7 +35,7 @@ main {
 }
 
 .logo {
-  max-width: 245px;
+  width: 80px;
 }
 
 .custom-datepicker {
@@ -73,4 +73,9 @@ input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none !important;
     -webkit-appearance: none !important;
+}
+
+.tLogos img {
+  width: 71px;
+  border-radius: 5px;
 }

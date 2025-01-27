@@ -1,5 +1,10 @@
 import Image from 'next/image';
-import logo from "@/images/logo-white.svg";
+import Link from "next/link";
+import logo from "@/images/logo.png";
+import trustpilot from "@/images/trustpilot.png";
+import iatanlogo from "@/images/iatan_logo.png";
+import clialogo from "@/images/clia_logo.png";
+import astalogo from "@/images/asta_logo.png";
 
 export default function Footer() {
     return (
@@ -59,160 +64,191 @@ export default function Footer() {
         </div>
         <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
           <div className="w-full mb-10">
-            <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
+            <h4 className="text-lg font-semibold text-dark  text-yellow-300 mb-9">
             Company
             </h4>
             <ul className="space-y-3">
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                 
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Site Map
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   About Us
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                 
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                  Opportunities
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                 
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Terms & Conditions
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                  Visa
                 </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
           <div className="w-full mb-10">
-            <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
+            <h4 className="text-lg font-semibold text-dark text-yellow-300 mb-9">
              Quick Links
             </h4>
             <ul className="space-y-3">
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                 
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Travel Agents
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href="  "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Tour
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Travel Insurance
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Reviews
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                   
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Contact Us
                 </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
           <div className="w-full mb-10">
-            <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
+            <h4 className="text-lg font-semibold text-dark text-yellow-300 mb-9">
               Tours
             </h4>
             <ul className="space-y-3">
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Africa tours
                 </a>
+                </Link>
               </li>
               <li>
+
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=""
+                   
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                   Asia tours
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href="javascript:void(0)"
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                  Europe tours
                 </a>
+                </Link>
               </li>
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                 
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                  Middle East tours
                 </a>
+                </Link>
               </li>
 
               <li>
+              <Link href="/" passHref legacyBehavior>
                 <a
-                  href=" "
+                  
                   className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                 >
                  America tours
                 </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
           <div className="w-full mb-10">
-            <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
+            <h4 className="text-lg font-semibold text-dark text-yellow-300 mb-9">
               Follow Us On
             </h4>
             <div className="flex items-center mb-6">
               <a
-                href="javascript:void(0)"
+                href="https://www.facebook.com/profile.php?id=100063769441297" target='_blank'
                 className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
@@ -225,20 +261,23 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="javascript:void(0)"
+                href="https://x.com/righttravel" target='_blank'
                 className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
-                  width={16}
-                  height={12}
-                  viewBox="0 0 16 12"
-                  className="fill-current"
-                >
-                  <path d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
-                </svg>
+  xmlns="http://www.w3.org/2000/svg"
+  width={15}
+  height={15}
+  fill="currentColor"
+  className="bi bi-twitter-x"
+  viewBox="0 0 16 16"
+>
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+</svg>
+
               </a>
               <a
-                href="javascript:void(0)"
+                href="https://www.youtube.com/@righttravel1" target='_blank'
                 className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
@@ -251,7 +290,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="javascript:void(0)"
+                href="https://www.linkedin.com/company/travel-right-travel-agency" target='_blank'
                 className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
@@ -263,10 +302,29 @@ export default function Footer() {
                   <path d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
                 </svg>
               </a>
+              <a
+    href="https://in.pinterest.com/righttravel/" target='_blank'
+    className="flex items-center justify-center w-8 h-8  border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white  "
+  >
+   <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={14}
+  height={14}
+  fill="currentColor"
+  className="bi bi-pinterest"
+  viewBox="0 0 16 16"
+>
+  <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+</svg>
+
+  </a>
             </div>
-            <p className="text-base text-body-color dark:text-dark-6">
-              © 2003-2025 Right Travel LLC. All rights reserved.
-            </p>
+           <div className='trustpilot'>
+            <a href="https://www.trustpilot.com/review/righttravel.info?utm_campaign=free&utm_medium=trustbox&utm_source=TrustBoxBasic" target='_blank'>
+            <Image className='w-full rounded-lg' src={trustpilot} alt='trustpilot'/>
+             </a>
+           </div>
+
           </div>
         </div>
       </div>
@@ -332,7 +390,27 @@ export default function Footer() {
 </>
 
                 </div>
+                
             </section>
+            <div className="bg-blue-800 py-2 shadow-lg">
+            <div className="container mx-auto px-4 flex flex-wrap items-center justify-between gap-2 "> 
+                    <div className="text-center text-sm text-white">
+                        <p>© 2003-2025 Right Travel LLC. All rights reserved.</p>
+                    </div>
+                    <div className="flex gap-2 text-white text-sm">
+                        <a href=" " className="tLogos ">
+                          <Image src={iatanlogo} alt=''/>
+                        </a>
+                        <a href=" " className="tLogos ">
+                        <Image src={astalogo} alt=''/>
+                        </a>
+                        <a href=" " className="tLogos ">
+                        <Image src={clialogo} alt=''/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </>
     );
 }

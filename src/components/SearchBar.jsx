@@ -1,117 +1,149 @@
-import { useEffect } from "react";
-import flatpickr from "flatpickr";
+
 import "flatpickr/dist/flatpickr.min.css";
+import { DatePickerWithRange } from "./DatePicker";
+
 
 export default function SearchBar() {
-  
-
   return (
     <>
-      <div className="max-w-xl mx-auto">
-        <div className="text-black flex flex-wrap items-center bg-white w-full rounded-full py-5 px-10 min-w-full justify-between">
-          {/* Region Select */}
-          <div>
-            <form className="max-w-sm mx-auto">
-              <label
-                htmlFor="countries"
-                className="mb-2 text-sm font-medium text-gray-900 flex items-center gap-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-globe-central-south-asia"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z" />
-                </svg>
-                Region
-              </label>
-              <select
-                id="countries"
-                className="text-1xl text-gray-900 rounded-lg block w-full"
-              >
-                <option selected="">Select</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-              </select>
-            </form>
-          </div>
+      <section className="py-2 bg-white   mx-auto rounded-lg shadow-lg max-w-[950px] mt-2">
+        <div className="container mx-auto px-3 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 ">
+            {/* Column 1 */}
+            <div className="bg-white  ">
 
-          {/* Destination Select */}
-          <div>
-            <form className="max-w-sm mx-auto">
-              <label
-                htmlFor="countries"
-                className="mb-2 text-sm font-medium text-gray-900 flex items-center gap-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-globe-central-south-asia"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z" />
-                </svg>
-                Destinations
-              </label>
-              <select
-                id="countries"
-                className="text-1xl text-gray-900 rounded-lg block w-full"
-              >
-                <option selected="">Select</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-              </select>
-            </form>
-          </div>
 
-          {/* Date Picker */}
-          <div>
-          <label
-                htmlFor="countries"
-                className="mb-2 text-sm font-medium text-gray-900 flex items-center gap-2"
-              >
-               <svg
-                  className="w-4 h-4 text-gray-500"
+              <form className="max-w-sm mx-auto">
+                <label
+                  htmlFor="countries"
+                  className=" mb-2 text-sm font-medium flex items-center gap-1 text-gray-900 dark:text-white"
+                ><svg
+                  className="w-5 h-5 text-gray-800 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+                  width={15}
+                  height={15}
+                  fill="none"
+                  viewBox="0 0 24 24"
                 >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
-                Destinations
-              </label>
-            <div className="relative max-w-sm">
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3">
-                <svg
-                  className="w-4 h-4 text-gray-500"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeWidth={2}
+                      d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+
+                  Region
+                </label>
+                <select
+                  id="region"
+                  defaultValue=""
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   "
                 >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
-              </div>
-              <input 
-                id="default-datepicker"
-                 
-                className="  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 "
-                placeholder="Select date"
-              />
+                  <option value=""> Select Region</option>
+                  <option value="US">Africa</option>
+                  <option value="CA">Asia</option>
+                  <option value="FR">Europe</option>
+                  <option value="DE">America</option>
+                </select>
+              </form>
+
+
             </div>
+            {/* Column 2 */}
+            <div className="bg-white-100">
+              <form className="max-w-sm mx-auto  ">
+                <label
+                  htmlFor="countries"
+                  className="flex items-center gap-1 mb-2 text-sm font-medium text-gray-900  "
+                ><svg
+                  className="w-5 h-5 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                    />
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"
+                    />
+                  </svg>
+
+                  Destinations
+                </label>
+                <select
+                  id="destinations"
+                  defaultValue=""
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   "
+                >
+                  <option selected=""> Select Destinations</option>
+                  <option value="US">Destinations</option>
+                  <option value="CA">Emirates</option>
+                </select>
+              </form>
+            </div>
+            {/* Column 3 */}
+            <div className="bg-white  ">
+              <form className="max-w-sm mx-auto">
+                <label
+                  htmlFor="countries"
+                  className="flex items-center gap-1 mb-2 text-sm font-medium text-gray-900  "
+                ><svg
+                  className="w-5 h-5 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+                    />
+                  </svg>
+
+                  Date To From
+                </label>
+                <DatePickerWithRange />
+              </form>
+            </div>
+            {/* Column 4 */}
+            <div className="bg-white  ">
+              <form className="max-w-sm mx-auto">
+                <label
+                  htmlFor="countries"
+                  className="block mb-2 text-sm font-medium text-white  "
+                >cc
+
+                </label>
+                <button type="button" className="text-white justify-center bg-gradient-to-r w-full flex items-center gap-1 from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                  <svg className="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                  </svg>
+                  Search </button>
+              </form>
+            </div>
+
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
