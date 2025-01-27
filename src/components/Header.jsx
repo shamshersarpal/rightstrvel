@@ -22,7 +22,7 @@ export default function Header() {
       <header className='fixed top-0 left-0 w-full shadow-md z-50'>
         <div className="topBar bg-blue-800 text-white">
           <div className=" max-w-screen-xl m-auto">
-            <div className="hidden lg:flex row flex-wrap justify-between items-center">
+            <div className="  lg:flex row flex-wrap justify-between items-center">
               <div className="lg:w-7/12 px-5 text-left">
                 <div className="h-full inline-flex items-center py-3 me-4">
 
