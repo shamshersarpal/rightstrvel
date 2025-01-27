@@ -47,7 +47,7 @@ export default function SearchBar() {
                   <option value="FR">Europe</option>
                   <option value="DE">America</option>
                 </select>
-              </form>
+              </form>    
 
 
             </div>
