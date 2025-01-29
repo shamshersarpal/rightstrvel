@@ -18,6 +18,11 @@ main {
 .hero{
   background-image: url("../images/hero.jpg");
 }
+.login-page{
+  background-image: url("../images/hero2.jpg");
+  background-position: center;
+  background-size: cover;
+}
 @layer base {
   :root { 
     --radius: 0.5rem;
