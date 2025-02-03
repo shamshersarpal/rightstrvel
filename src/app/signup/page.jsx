@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/Header"; 
 
 export default function SignUp() {
     const [step, setStep] = useState(1);
@@ -17,6 +17,7 @@ export default function SignUp() {
         window.scrollTo(0, 0);
     };
 
+     
     return (
         <>
             <Header />
